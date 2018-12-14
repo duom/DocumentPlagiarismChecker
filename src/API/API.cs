@@ -81,7 +81,9 @@ namespace DocumentPlagiarismChecker
         /// <param name="results">A set of file matching scores</param>
         public void WriteOutput(DisplayLevel level = DisplayLevel.COMPARATOR){
             //TODO: must be selected by settings
-            Outputs.Terminal t = new Outputs.Terminal();
+            Outputs.Terminal1 t = new Outputs.Terminal1();
+
+            //modificado por albert
             t.Write(this.MatchingResults, level);
         }
 
